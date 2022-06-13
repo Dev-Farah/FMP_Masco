@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masco - Apple</title>
+    <link rel="shortcut icon" href="../images/Icon.png" type="image/x-icon">
+    <!-- Bootstrap CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <section>
+        <nav class="navbar navbar-expand-md" id="top">
+            <div class="container-fluid">
+                <a class="navbar-brand p-0" href="../index.html">
+                    <img src="../images/Logo-green.png" width="140px" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa-solid fa-list"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-lg-0 text-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="brands-list nav-link dropdown-toggle" href="javascript:void(0)"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Brands
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item active-brand" href="./apple.html">Apple</a></li>
+                                <li><a class="dropdown-item" href="./nokia.html">Nokia</a></li>
+                                <li><a class="dropdown-item" href="./oppo.html">Oppo</a></li>
+                                <li><a class="dropdown-item" href="./samsung.html">Samsung</a></li>
+                                <li><a class="dropdown-item" href="./vivo.html">Vivo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Body -->
+
+    <!-- Go to top -->
+    <a href="#top"><i class="fas fa-chevron-circle-up" id="scrollTop"></i></a>
+
+    <!-- Banner -->
+    <section class="container2 apple-container">
+        <div class="row m-0 apple-banner">
+            <div class="col-2 apple-banner-content">
+                <a href="#all-products" class="banner-btn btn btn-dark">Explore Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Containers for all products -->
+    <section id="all-products">
+        <div class="container mb-5 mt-5">
+            <div class="row m-0">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card mt-3 py-3">
+                        <div class="product1 align-items-center p-2 text-center">
+                            <img src="../images/iPhone/iPhone 13 Pro/compare_iphone_13__fqzwhmfmroey_large.jpg" alt=""
+                                class="rounded">
+                            <h3 class="mt-3">iPhone 13</h3>
+
+                            <!-- Card info -->
+                            <div class="mt-3 info">
+                                <span class="text1 d-block">A total powerhouse.</span>
+                            </div>
+                            <div class="cost mt-3 text-dark">
+                                <span>From Rs. 226,100</span>
+                            </div>
+                        </div>
+                        <!-- Card info ends -->
+
+                        <div class="p-3 text-center text-white mt-1 cursor">
+                            <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                onclick="openModal('./Icon.png', ' iPhone-13', 'A total powerhouse.', 'From Rs. 226,100')"
+                                data-bs-target="#productModal">Learn more</button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Card 1 ends -->
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card mt-3 py-3">
+                        <div class="product1 align-items-center p-2 text-center">
+                            <img src="../images/iPhone/iPhone 13 Pro/compare_iphone_13_pro__bpn3x8hs692a_large.jpg"
+                                alt="" class="rounded">
+                            <h3 class="mt-3">iPhone 13 Pro</h3>
+
+                            <!-- Card info -->
+                            <div class="mt-3 info">
+                                <span class="text1 d-block">The ultimate iPhone.</span>
+                            </div>
+                            <div class="cost mt-3 text-dark">
+                                <span>From Rs. 283,300</span>
+                            </div>
+                        </div>
+                        <!-- Card info ends -->
+
+                        <div class="p-3 iPhone-13-Pro text-center text-white mt-1 cursor">
+                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 ends -->
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog myModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="row m-0">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <img id="modalImg" src="img.png" width="100%" height="auto" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h1 id="modalProductName">Product Name</h1>
+                            <p id="modalProductDetails">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, soluta.</p>
+                            <p id="modalProductPrice">Rs</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+
+
+<div class="pta">
+    <p>PTA and Non-PTA approve range available</p>
+</div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer p-3">
+        <h5>Disclaimer:</h5>
+        <p>All prices are subject to change without prior notice due to dollar
+                fluctuation. Please confirm price before placing an order to avoid
+                inconvenience. Thank you.</p>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <section class="animation">
+        <footer>
+            <section class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </section>
+            <section class="footer">
+                <div class="info-links d-flex justify-content-between flex-wrap">
+                    <ul class="flex-wrap">
+                        <li class="mb-3"><a href="../index.html"><img src="../images/Logo-green.png" width="130px"
+                                    alt="Logo"></a>
+                        </li>
+                        <p>Masco - Mushtaq Ali's Sons Co<br />
+                            We provide all services related to Cellular phones, High Tech Touch
+                            Screen repairing, Hardware, Software, Sales & purchase.</p>
+                    </ul>
+                    <ul>
+                        <h5 class="mt-4">Brands</h5>
+                        <li><a href="./apple.html">Apple</a></li>
+                        <li><a href="./nokia.html">Nokia</a></li>
+                        <li><a href="./oppo.html">Oppo</a></li>
+                        <li><a href="./samsung.html">Samsung</a></li>
+                        <li><a href="./vivo.html">Vivo</a></li>
+                    </ul>
+                    <ul>
+                        <h5 class="mt-4">Support</h5>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../services.html">Our Services</a></li>
+                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+                    </ul>
+                    <ul class="contact">
+                        <h5 class="mt-4">Contact</h5>
+                        <div class="phone d-flex flex-wrap">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <p>+92 222720194</p>
+                        </div>
+                        <div class="mobile d-flex flex-wrap">
+                            <span><i class="fa-solid fa-mobile-screen"></i></span>
+                            <p>+92 3113850900</p>
+                        </div>
+                        <div class="email d-flex flex-wrap">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <p><a href="mailto:mascomobiles1@gmail.com">mascomobiles1@gmail.com</a></p>
+                        </div>
+                        <div class="address d-flex">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p>Shop # 42, Al-Mustafa Arcade, Near Chandni Mobile Market Saddar, Hyderabad</p>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="follow p-3 flex-wrap">
+                    <div class="para">
+                        <p>
+                            Follow Us
+                        </p>
+                    </div>
+                    <div class="icons d-flex">
+                        <div class="iconbox">
+                            <a href="https://www.facebook.com/masco786" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="iconbox">
+                            <a href="https://www.instagram.com/masco2.0/?hl=en" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <section class="last-container p-3 flex-wrap">
+            <p class="m-0"><b>&#169; Masco</b> - All Rights Reserved</p>
+        </section>
+    </section>
+</body>
+
+<!-- Bootstrap JS cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+<!-- External JS -->
+<script src="../js/app.js"></script>
+
+</html>

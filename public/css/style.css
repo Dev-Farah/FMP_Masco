@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    padding: 0 50px;
+    background-image: linear-gradient(#404040, #212529);
+}
+
+.nav-item {
+    margin: 0 8px;
+}
+
+.nav-link {
+    color: #eeeeee;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-item a.active,
+.nav-link:hover {
+    color: #eeeeee;
+    background-image: linear-gradient(#06d625, #00a81972);
+}
+
+.fa-list {
+    color: #eeeeee;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:hover .fa-list {
+    color: #06d625;
+    background-color: #00a81928;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.brands-list:focus {
+    color: #eeeeee;
+}
+
+.active-brand {
+    background-color: #eeeeee;
+}
+
+
+/* Cards */
+
+.card {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    transition: 0.5s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text1 {
+    font-size: 18px;
+    color: #666666;
+}
+
+.info {
+    line-height: 16px;
+}
+
+.cost span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+body {
+    background-color: #f5f7f5;
+}
+
+/* Go to top */
+#scrollTop {
+    z-index: 1;
+    color: #0e1012;
+    font-size: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: transform 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollTop:hover {
+    transform: translateY(-3px);
+}
+
+/* All Top banners */
+/* About us */
+.container2 .about-banner {
+    background-image: url("../images/Banners/about.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* Our Services */
+.container2 .services-banner {
+    background-image: url("../images/Banners/services.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* Contact Us */
+.container2 .contact-banner {
+    background-image: url("../images/Banners/contact-us.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* Nokia */
+.container2 .nokia-banner {
+    background-image: url("../images/Banners/Nokia-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.nokia-banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nokia-banner-content {
+    margin: 0 150px 100px 0;
+}
+
+.banner-btn {
+    width: 150px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 8px 0;
+    border-radius: 30px;
+}
+
+/* Apple */
+.container2 .apple-banner {
+    background-image: url("../images/Banners/Apple-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: unset;
+    height: 400px;
+}
+
+.apple-container {
+    padding-top: 100px;
+    background-color: #ffffff;
+}
+
+.apple-banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.apple-banner-content {
+    margin: 0 0 100px 100px;
+}
+
+/* Oppo */
+.container2 .oppo-banner {
+    background-image: url("../images/Banners/Oppo-banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.oppo-banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.oppo-banner-content {
+    margin: 0 150px 100px 0;
+
+}
+
+/* Samsung */
+.container2 .samsung-banner {
+    background-image: url("../images/Banners/Samsung-banner.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.samsung-banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.samsung-banner-content {
+    margin: 0 0 100px 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Home Page */
+.home {
+    padding: 50px;
+}
+.home h1 {
+    font-size: 3rem;
+    color: #404040;
+    margin: 20px 0;
+}
+.home h2 {
+    font-size: 2.5rem;
+    color: #404040;
+    margin: 50px 0 20px 0;
+}
+.home img {
+    transition: 0.5s;
+}
+
+.home img:hover {
+    transform: translateY(-15px);
+    transition: 0.5s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+
+
+
+
+/* About Us */
+.about {
+    padding: 50px;
+}
+.about h1 {
+    align-self: center;
+    font-size: 3.5rem;
+    color: #666666;
+    margin: 20px 0;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+    color: #404040;
+    margin: 20px 0;
+}
+
+.about p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+/* Our Services */
+section.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.services h1 {
+    align-self: center;
+    font-size: 3.5rem;
+    color: #666666;
+    margin: 20px 0;
+}
+
+.services p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.services .fa-arrow-right {
+    font-size: 40px;
+}
+.services .fa-arrow-down {
+    display: none;
+}
+
+.services div img {
+    max-width: 400px !important;
+}
+
+
+
+
+
+
+
+
+/* Contact Us */
+.contact form {
+    color: #eeeeee;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(#404040, #212529);
+    max-width: 800px !important;
+    margin: 0 auto;
+    align-self: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.find-us iframe {
+    border-radius: 20px;
+    max-width: 700px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contact .contact-us h1,
+.contact .find-us h1 {
+    font-size: 3rem;
+    color: #666666;
+    margin: 40px auto;
+    padding-bottom: 8px;
+    max-width: 700px;
+    border-bottom: 5px solid #666666;
+}
+.contact .contact-us h1 {
+    max-width: 790px;
+}
+
+.contact form input,
+.contact form textarea {
+    color: grey;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.contact button {
+    width: 50%;
+    border-radius: 8px;
+    align-self: center;
+    margin: 10px 0;
+    color: #eeeeee;
+    background-image: linear-gradient(#06d625, #00a81972);
+}
+
+.pta {
+    padding: 40px;
+    font-size: 20px;
+}
+
+
+.disclaimer {
+    padding: 40px;
+}
+
+.disclaimer h5 {
+    font-size: 30px;
+}
+
+.disclaimer p {
+    font-size: 20px;
+}
+
+/* Footer */
+footer a:hover {
+    color: #eeeeee;
+    text-decoration: underline;
+}
+
+.footer {
+    flex-wrap: nowrap;
+    width: 97%;
+}
+
+.footer ul {
+    color: #eeeeeede;
+    padding: 0 16px;
+    max-width: 325px;
+}
+
+.footer ul li {
+    padding: 5px 0;
+}
+
+.footer p,
+.footer a,
+.footer i {
+    color: #eeeeeeb5;
+}
+
+.contact div span {
+    margin-right: 15px;
+}
+
+.follow {
+    border-top: 1px solid #666666;
+}
+
+.follow p {
+    color: #eeeeee;
+}
+
+.follow .iconbox {
+    width: 30px;
+    height: 30px;
+    margin: 0 0px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #666666;
+}
+
+footer div.iconbox:hover {
+    background-color: #666666;
+}
+
+footer .icons a:hover {
+    color: #eeeeee;
+}
+
+
+
+
+
+
+/* Footer Animation */
+.animation {
+    margin: 200px 0 0 0;
+    width: 100%;
+    background-color: #212529;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    color: #eeeeee;
+    background-color: #212529;
+    min-height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+
+.last-container {
+    color: #eeeeee;
+    background-color: #181b1e;
+    /* border-top: 1px solid #666666; */
+}
+
+
+
+
+
+
+
+/*---------------- Media Queries ----------------*/
+
+/* Media Query for Large Screen */
+
+@media only screen and (max-width: 900px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .navbar-brand img {
+        margin: 5px 0;
+        width: 120px;
+    }
+}
+
+/* Media Query for medium Screen */
+
+@media only screen and (max-width: 778px) {
+    .nav-item {
+        text-align: center;
+    }
+
+    .nav-item a.active {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 588px) {
+    .services .fa-arrow-right {
+        display: none;
+    }
+    .services .fa-arrow-down {
+        display: inline-block;
+        font-size: 25px;
+        align-self: center;
+    }
+    .about, .services, .home {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    nav {
+        padding: 0 10px;
+    }
+    .navbar-brand img {
+        margin: 0;
+        width: 100px;
+    }
+}
