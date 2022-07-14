@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation CSS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -72,36 +74,107 @@
 
     <!-- Banner -->
     <section class="container2">
-        <div class="row m-0 services-banner"
-            cite="https://www.freepik.com/premium-photo/technician-repairing-broken-smartphone-desk_3750987.htm#query=mobile%20repair&position=20&from_view=search">
-            <!-- <div class="col-2 services-banner-content">
-                <a href="#all-products" class="banner-btn btn btn-dark">Explore Now</a>
-            </div> -->
+        <div class="row m-0 services-banner">
+            <div class="services-banner-content mx-auto">
+                <section class="mx-auto">
+                    <h2 href="#all-products" class="">Have a Mobile/Tablet Problem?</h2>
+                    <h3><span>Don't Worry,</span> We will take care of your devices!</h3>
+                </section>
+            </div>
         </div>
     </section>
 
     <!-- Services -->
     <section class="services">
-        <h1>Our Services</h1>
-        <p>We provide our best services with respectful behavior as we do the best to fulfill our customers' needs.</p>
+        <h1 class="h1">Our Services</h1>
 
-        <p>We provide all services related to Cellular phones, High Tech Touch
-            Screen repairing, Hardware, Software, Sales & purchase.</p>
+        <h2 class="h2">We provide all services related to Cellular Phones and Tablets.</h2>
+        <div class="row m-0 p-4 container mx-auto">
 
-        <p>We deal in all kinds of new and second hand Apple mobiles iPads and accessories as well as in Samsung, Nokia, Oppo,
-            Vivo, Realme, Redmi, and Itel.</p>
+            <!-- Card 1 -->
+            <section class="services-box col-md-4 col-sm-4">
+                <div data-aos="zoom-in">
+                    <div class="card services-card my-3 mx-auto">
+                        <section class="img-box">
+                            <img src="./images/Services/Broken Screen.png" width="55" alt="">
+                        </section>
+                        <h5>Broken Screen</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- Card 1 ends -->
 
-        <p>Also we provide services in repairing all kinds of mobile phones and tablets including glass change and LCD
-            replacements.</p>
+            <!-- Card 2 -->
+            <section class="services-box col-md-4 col-sm-4">
+                <div data-aos="zoom-in">
+                    <div class="card services-card my-3 mx-auto">
+                        <section class="img-box">
+                            <img src="./images/Services/Board Repair.png" width="70" alt="">
+                        </section>
+                        <h5>Board Repair</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- Card 2 ends -->
 
-            <div class="align-self-center my-3">
-                <span><img src="./images/Extra images/Wrecked iphone.jpg" width="100%" alt=""></span>
-                <span><i class="fa-solid fa-arrow-right mx-3"></i></span>
-                <span><i class="fa-solid fa-arrow-down mx-auto"></i></span>
-                <span><img src="./images/Extra images/Close up of Mobile.jpg" width="100%" alt=""></span>
-            </div>
+            <!-- Card 3 -->
+            <section class="services-box col-md-4 col-sm-4">
+                <div data-aos="zoom-in">
+                    <div class="card services-card my-3 mx-auto">
+                        <section class="img-box">
+                            <img src="./images/Services/Software Upgrade.png" width="73" alt="">
+                        </section>
+                        <h5>Software Upgrade</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- Card 3 ends -->
+
+            <!-- Card 4 -->
+            <section class="services-box col-md-4 col-sm-4">
+                <div data-aos="zoom-in">
+                    <div class="card services-card my-3 mx-auto">
+                        <section class="img-box">
+                            <img src="./images/Services/Water Repair.png" width="55" alt="">
+                        </section>
+                        <h5>Water Repair</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- Card 4 ends -->
+
+            <!-- Card 5 -->
+            <section class="services-box col-md-4 col-sm-4">
+                <div data-aos="zoom-in">
+                    <div class="card services-card my-3 mx-auto">
+                        <section class="img-box">
+                            <img src="./images/Services/Hardware Repair.png" width="70" alt="">
+                        </section>
+                        <h5>Hardware Repair</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- Card 5 ends -->
+
+            <!-- Card 6 -->
+            <section class="services-box col-md-4 col-sm-4">
+                <div data-aos="zoom-in">
+                    <div class="card services-card my-3 mx-auto">
+                        <section class="img-box">
+                            <img src="./images/Services/Battery Problem.png" width="55" alt="">
+                        </section>
+                        <h5>Battery Problem</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- Card 6 ends -->
+        </div>
+
+        <p>We deal in all kinds of new and second hand Apple Mobiles, iPads and Accessories as
+            well as in Samsung, Nokia, Oppo, Vivo, Realme, Redmi, and Itel.
+        </p>
     </section>
-    
+
 
     <!-- Footer -->
     <section class="animation">
@@ -132,6 +205,7 @@
                     </ul>
                     <ul>
                         <h5 class="mt-4">Support</h5>
+                        <li><a href="./contact.html#find-us">Map</a></li>
                         <li><a href="./about.html">About Us</a></li>
                         <li><a href="./services.html">Our Services</a></li>
                         <li><a href="javascript:void(0)">Privacy Policy</a></li>
@@ -192,6 +266,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+
+<!-- AOS Animation JS cdn and initialization -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <!-- External JS -->
 <script src="./js/app.js"></script>

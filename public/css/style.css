@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f7f5;
+}
+
 /* Navigation Bar */
 nav {
     padding: 0 50px;
@@ -57,10 +61,7 @@ a {
 
 
 /* Cards */
-
 .card {
-    border: none;
-    outline: none;
     background-color: #ffffff;
     border-radius: 20px;
     transition: 0.5s;
@@ -77,6 +78,10 @@ a {
     color: #666666;
 }
 
+.text2 {
+    line-height: 22px;
+}
+
 .info {
     line-height: 16px;
 }
@@ -84,10 +89,6 @@ a {
 .cost span {
     font-weight: bold;
     font-size: 17px;
-}
-
-body {
-    background-color: #f5f7f5;
 }
 
 /* Go to top */
@@ -112,7 +113,7 @@ html {
 /* All Top banners */
 /* About us */
 .container2 .about-banner {
-    background-image: url("../images/Banners/about.webp");
+    background-image: url("../images/Banners/about.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +122,7 @@ html {
 
 /* Our Services */
 .container2 .services-banner {
-    background-image: url("../images/Banners/services.webp");
+    background-image: url("../images/Banners/services.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,11 +228,24 @@ html {
     margin: 0 0 100px 100px;
 }
 
+/* Vivo */
+.container2 .vivo-banner {
+    background-image: url("../images/Banners/vivo-X70-Pro-Cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
 
+.vivo-banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
 
-
-
-
+.vivo-banner-content {
+    margin: 0 0 100px 100px;
+}
 
 
 
@@ -241,27 +255,78 @@ html {
 .home {
     padding: 50px;
 }
+
 .home h1 {
     font-size: 3rem;
     color: #404040;
     margin: 20px 0;
 }
+
 .home h2 {
     font-size: 2.5rem;
     color: #404040;
     margin: 50px 0 20px 0;
 }
-.home img {
+
+/* Latest Mobiles / Slick Slider */
+/* .latest-mobiles {
+    margin: 100px 0;
+}
+
+.home .latest-mobiles img {
+    margin: 0 auto;
+    max-width: 200px;
+    height: 270px;
+}
+
+.responsive {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px 0;
+} */
+
+.brands .small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.brands .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Brands */
+
+.brands {
+    margin: 50px auto 90px;
+}
+
+.brands a {
+    display: flex;
+    justify-content: center;
+}
+
+.col-1 {
+    width: 160px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid lightgrey;
     transition: 0.5s;
 }
 
-.home img:hover {
-    transform: translateY(-15px);
-    transition: 0.5s;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.col-1 img {
+    width: 90%;
+    cursor: pointer;
+    filter: grayscale(100%);
 }
-
-
 
 
 
@@ -271,6 +336,7 @@ html {
 .about {
     padding: 50px;
 }
+
 .about h1 {
     align-self: center;
     font-size: 3.5rem;
@@ -284,6 +350,11 @@ html {
     margin: 20px 0;
 }
 
+.about h3 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgrey;
+}
+
 .about p {
     font-size: 1.5rem;
     margin: 10px 0;
@@ -295,38 +366,67 @@ html {
 
 
 /* Our Services */
-section.services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 50px;
+.services-banner div section {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    margin-top: 190px;
+    background-color: #f5f7f7;
+    border: 6px dashed #fff;
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(92.35deg, #e5e4e3 1.28%, #929395 98.95%) border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.services-banner span {
+    color: #15a74a;
 }
 
 .services h1 {
-    align-self: center;
+    text-align: center;
     font-size: 3.5rem;
     color: #666666;
-    margin: 20px 0;
+    margin: 50px 0;
+}
+
+.services h2 {
+    font-size: 1.8rem;
+    color: #666666;
+    margin: 15px 80px;
 }
 
 .services p {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.services .fa-arrow-right {
-    font-size: 40px;
-}
-.services .fa-arrow-down {
-    display: none;
+    font-size: 1.4rem;
+    color: #404040;
+    margin: 15px 80px;
 }
 
 .services div img {
     max-width: 400px !important;
 }
 
+.services-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 217px;
+    padding: 25px;
+}
 
+.services-box h5 {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.img-box {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -360,6 +460,7 @@ section.services {
     max-width: 700px;
     border-bottom: 5px solid #666666;
 }
+
 .contact .contact-us h1 {
     max-width: 790px;
 }
@@ -382,14 +483,44 @@ section.services {
     background-image: linear-gradient(#06d625, #00a81972);
 }
 
-.pta {
-    padding: 40px;
-    font-size: 20px;
+
+/* Modal */
+.myModal {
+    min-width: 50% !important;
+}
+
+.myModal h1 {
+    margin-bottom: 20px;
+}
+
+.myModal ul {
+    max-width: fit-content;
+    border-radius: 10px;
+    border: 1px solid grey;
+    list-style-position: inside !important;
+}
+
+.myModal ul li {
+    width: fit-content;
+    padding: 3px 10px 1px 10px;
 }
 
 
+.pta {
+    font-size: 15px;
+}
+
+
+/* Disclaimer */
 .disclaimer {
-    padding: 40px;
+    max-width: 81%;
+    padding: 25px;
+    margin: 0 auto;
+    align-self: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid lightgrey;
+    transition: 0.5s;
 }
 
 .disclaimer h5 {
@@ -397,7 +528,13 @@ section.services {
 }
 
 .disclaimer p {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.disclaimer:hover {
+    transform: translateY(-15px);
+    transition: 0.5s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* Footer */
@@ -436,7 +573,7 @@ footer a:hover {
 }
 
 .follow p {
-    color: #eeeeee;
+    color: #eeeeeeee;
 }
 
 .follow .iconbox {
@@ -542,9 +679,8 @@ footer .wave#wave4 {
 
 
 .last-container {
-    color: #eeeeee;
+    color: #eeeeeede;
     background-color: #181b1e;
-    /* border-top: 1px solid #666666; */
 }
 
 
@@ -566,6 +702,23 @@ footer .wave#wave4 {
         margin: 5px 0;
         width: 120px;
     }
+
+    #all-products h1 {
+        font-size: 2.5rem;
+    }
+
+    .apple-box img,
+    .nokia-box img,
+    .oppo-box img,
+    .samsung-box img,
+    .vivo-box img {
+        height: auto;
+    }
+
+    .services h2,
+    .services p {
+        margin: 15px 45px;
+    }
 }
 
 /* Media Query for medium Screen */
@@ -578,28 +731,100 @@ footer .wave#wave4 {
     .nav-item a.active {
         background-color: transparent;
     }
+
+    .myModal h1 {
+        margin-bottom: 10px;
+    }
+
+    /* Home page Carousel banners */
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .services-box {
+        margin-right: 40px;
+    }
 }
 
 @media only screen and (max-width: 588px) {
-    .services .fa-arrow-right {
-        display: none;
-    }
-    .services .fa-arrow-down {
-        display: inline-block;
-        font-size: 25px;
-        align-self: center;
-    }
-    .about, .services, .home {
+
+    .about,
+    section.services,
+    .home {
         padding: 20px;
     }
+
+    .about p,
+    .home p {
+        font-size: 20px !important;
+    }
+
+    .h1 {
+        font-size: 38px !important;
+    }
+
+    .h2 {
+        font-size: 33px !important;
+    }
+
+    .services h2 {
+        margin: 0 0;
+        font-size: 26px !important;
+    }
+
+    .services p {
+        margin: 0 0;
+    }
+
+    #all-products h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .col-1 {
+        width: 120px;
+        height: 90px;
+    }
+
 }
 
 @media only screen and (max-width: 435px) {
     nav {
         padding: 0 10px;
     }
+
     .navbar-brand img {
         margin: 0;
         width: 100px;
+    }
+
+    .myModal h1 {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #all-products h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .home {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    footer {
+        padding: 0 15px;
+    }
+
+    #all-products h1 {
+        font-size: 1.7rem;
     }
 }

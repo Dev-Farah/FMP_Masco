@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation CSS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -79,223 +81,624 @@
     </section>
 
 
-    <!-- Containers for all products -->
+    <!-- Container for all products -->
     <section id="all-products">
-        <div class="container mb-5 mt-5 featured-phones">
-            <h1>Nokia Feature Phones</h1>
+
+        <!-- Feature Phones -->
+        <div class="container my-5 py-4 feature-phones">
+            <section>
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h1>Nokia Feature Phones</h1>
+                </div>
+            </section>
             <div class="row m-0">
+
                 <!-- Card 1 -->
                 <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/105_4G.png" width="160px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 105 (4G)</h3>
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-106.png" width="165px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 106</h3>
 
-                            <!-- Card info -->
-                            <div class="mt-3 info">
-                                <span class="text1 d-block">Better connected than ever before</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">For those long catch-ups</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 3,050.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs 4,999.00</span>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-106 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-106.png', 'Nokia 106', 'For those long catch-ups', 'Price: 3,050 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;1.8&Prime;', 'Color: &nbsp;&nbsp;Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
                             </div>
                         </div>
-                        <!-- Card info ends -->
-
-                        <div class="p-3 Nokia-105-4G text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <!-- Card 1 ends -->
 
                 <!-- Card 2 -->
                 <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/110.png" width="160px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 110</h3>
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-105_4G.png" width="152px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 105 4G</h3>
 
-                            <!-- Card info -->
-                            <div class="mt-3 info">
-                                <span class="text1 d-block">Enjoy the moment with music and games, or capture it with
-                                    the rear camera.</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">HD voice calls, easy to use.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 4,999.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs. 283,300</span>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-105-4G text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-105_4G.png', 'Nokia 105 4G', 'HD voice calls, easy to use.', 'Price: 4,999 Rs', 'Band: &nbsp;&nbsp;4G', 'Display: &nbsp;1.8&Prime;', 'Colors: &nbsp;&nbsp;Blue, Red, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
                             </div>
                         </div>
-                        <!-- Card info ends -->
-
-                        <div class="p-3 Nokia 110 text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <!-- Card 2 ends -->
 
                 <!-- Card 3 -->
                 <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/nokia-106.avif" width="230px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 106</h3>
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-110.png" width="160px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 110</h3>
 
-                            <!-- Card info -->
-                            <div class="mt-3 info">
-                                <span class="text1 d-block">For those long catch-ups</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Talk, play and snap</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs. 3,999.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs 2,990.00</span>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-110 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-110.png', 'Nokia 110', 'Talk, play and snap', 'Price: 3,999 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;1.77&Prime;', 'Colors: &nbsp;&nbsp;Rose Gold, Cyan, Charcoal')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
                             </div>
                         </div>
-                        <!-- Card info ends -->
-
-                        <div class="p-3 Nokia-106 text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <!-- Card 3 ends -->
 
                 <!-- Card 4 -->
                 <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/nokia-110_4G-black-front-int.avif" width="230px" alt=""
-                                class="rounded">
-                            <h3 class="mt-3">Nokia 110 4G</h3>
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-110_4G.png" width="160px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 110 4G</h3>
 
-                            <!-- Card info -->
-                            <div class="mt-3 info">
-                                <span class="text1 d-block">Quality, reliability and HD voice calls</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Quality, reliability and HD voice calls</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 5,950.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs 5,950.00</span>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-110-4G text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-110_4G.png', 'Nokia 110 4G', 'Quality, reliability and HD voice calls', 'Price: 5,950 Rs', 'Band: &nbsp;&nbsp;4G', 'Display: &nbsp;1.8&Prime;', 'Colors: &nbsp;&nbsp;Yellow, Aqua, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
                             </div>
                         </div>
-                        <!-- Card info ends -->
-
-                        <div class="p-3 Nokia-110-4G text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <!-- Card 4 ends -->
 
                 <!-- Card 5 -->
                 <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/nokia-130.avif" width="230px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 130</h3>
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-130.png" width="170px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 130</h3>
 
-                            <!-- Card info -->
-                            <div class="mt-3 info">
-                                <span class="text1 d-block">Hard-wearing entertainment</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Hard-wearing entertainment</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 4,100.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs 4,299.00</span>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-130 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-130.png', 'Nokia 130', 'Hard-wearing entertainment', 'Price: 4,100 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;1.8&Prime;', 'Colors: &nbsp;&nbsp;Grey, Red, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
                             </div>
                         </div>
-                        <!-- Card info ends -->
-
-                        <div class="p-3 Nokia-130 text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <!-- Card 5 ends -->
 
                 <!-- Card 6 -->
                 <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/nokia-150.avif" width="230px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 150</h3>
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-150.png" width="150px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 150</h3>
 
-                            <!-- Card info -->
-                            <div class="mt-3 info">
-                                <span class="text1 d-block">All the essentials</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">All the essentials</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 5,400.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs 5,800.00</span>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-150 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-150.png', 'Nokia 150', 'All the essentials', 'Price: 5,400 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;2.4&Prime;', 'Colors: &nbsp;&nbsp;Red, Cyan, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
                             </div>
                         </div>
-                        <!-- Card info ends -->
-
-                        <div class="p-3 Nokia-150 text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <!-- Card 6 ends -->
 
-            </div>
+                <!-- Card 7 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-225_4G.png" width="155px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 225 4G</h3>
 
-        </div>
-
-
-
-
-        <!-- <div class="container mb-5 mt-5 featured-phones">
-            <h1>Nokia Smart Phones</h1>
-            <div class="row m-0"> -->
-        <!-- Card 1 -->
-        <!-- <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/105_4G.png" width="160px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 105 (4G)</h3> -->
-
-        <!-- Card info -->
-        <!-- <div class="mt-3 info">
-                                <span class="text1 d-block">Better connected than ever before</span>
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Premium design plus 4G perks</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 5,899.00</span>
+                                </div>
                             </div>
-                            <div class="cost mt-3 text-dark">
-                                <span>From Rs 4,999.00</span>
-                            </div>
-                        </div> -->
-        <!-- Card info ends -->
+                            <!-- Card info ends -->
 
-        <!-- <div class="p-3 Nokia-105-4G text-center text-white mt-1 cursor">
-                            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
+                            <div class="p-3 Nokia-225-4G text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-225_4G.png', 'Nokia 225 4G', 'Premium design plus 4G perks', 'Price: 5,899 Rs', 'Band: &nbsp;&nbsp;4G', 'Display: &nbsp;2.4&Prime;', 'Colors: &nbsp;&nbsp;Sand, Blue, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
                         </div>
+                    </section>
+                </div>
+                <!-- Card 7 ends -->
+
+                <!-- Card 8 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-3310.png" width="167px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 3310</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">The return of an icon</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 7,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-3310 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-3310.png', 'Nokia 3310', 'The return of an icon', 'Price: 7,999 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;2.4&Prime;', 'Colors: &nbsp;&nbsp;Grey, Yellow, Red, Blue')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 8 ends -->
+
+                <!-- Card 9 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-5310.png" width="160px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 5310</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Big on sound</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 6,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-5310 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-5310.png', 'Nokia 5310', 'Big on sound', 'Price: 6,999 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;2.4&Prime;', 'Colors: &nbsp;&nbsp;White, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 9 ends -->
+
+                <!-- Card 10 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Feature Phones/nokia-6310.png" width="160px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia 6310</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">The icon has returned</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 7,800.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-6310 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Feature Phones/nokia-6310.png', 'Nokia 6310', 'The icon has returned', 'Price: 7,800 Rs', 'Band: &nbsp;&nbsp;2G', 'Display: &nbsp;2.8&Prime;', 'Colors: &nbsp;&nbsp;Dark Green, Black')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 10 ends -->
+            </div>
+        </div>
+
+        <!-- Smartphones -->
+        <div class="container my-5 py-4 Smartphones">
+            <section>
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h1>Nokia Smartphones</h1>
+                </div>
+            </section>
+            <div class="row m-0">
+
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-1_4-dusk-front_back-int.png" width="175px"
+                                    alt="" class="rounded">
+                                <h3 class="mt-3">Nokia 1.4</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Go big on learning and entertainment</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 16,900.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-1.4 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-1_4-dusk-front_back-int.png', 'Nokia 1.4', 'Go big on learning and entertainment', 'Price: 16,900 Rs', 'Battery: &nbsp;&nbsp;4000 mAh', 'Display: &nbsp;6.51&Prime;', 'Colors: &nbsp;&nbsp;Fjord, Dusk, Charcoal')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 1 ends -->
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-2_4-charcoal-front_back-int.png"
+                                    width="174px" alt="" class="rounded">
+                                <h3 class="mt-3">Nokia 2.4</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Smart imaging, smart battery</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 18,900.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-2.4 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-2_4-charcoal-front_back-int.png', 'Nokia 2.4', 'Smart imaging, smart battery', 'Price: 18,900 Rs', 'Battery: &nbsp;&nbsp;4500 mAh', 'Display: &nbsp;6.5&Prime;', 'Colors: &nbsp;&nbsp;Fjord, Dusk, Charcoal')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 2 ends -->
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-3_2-steel-front_back-int.png" width="179px"
+                                    alt="" class="rounded">
+                                <h3 class="mt-3">Nokia 3.2</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Big screen, small price tag</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 17,700.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-3.2 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-3_2-steel-front_back-int.png', 'Nokia 3.2', 'Big screen, small price tag', 'Price:', '32GB: &nbsp;&nbsp;Rs.17,700', '64GB: &nbsp;&nbsp;Rs.18,900', null)"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 3 ends -->
+
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-3_4-fjord-front_back-int.png" width="175px"
+                                    alt="" class="rounded">
+                                <h3 class="mt-3">Nokia 3.4</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Built for streaming</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 23,750.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-3.4 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-3_4-fjord-front_back-int.png', 'Nokia 3.4', 'Built for streaming', 'Price: 23,750 Rs', 'Battery: &nbsp;&nbsp;4000 mAh', 'Display: &nbsp;6.39&Prime;', 'Colors: &nbsp;&nbsp;Fjord, Dusk, Charcoal')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 4 ends -->
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-5_3-sand-front_back-int.png" width="173px"
+                                    alt="" class="rounded">
+                                <h3 class="mt-3">Nokia 5.3</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">More cameras, more screen</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 28,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-5.3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-5_3-sand-front_back-int.png', 'Nokia 5.3', 'More cameras, more screen', 'Price: 28,999 Rs', 'Battery: &nbsp;&nbsp;4000 mAh', 'Display: &nbsp;6.55&Prime;', 'Colors: &nbsp;&nbsp;Sand, Cyan, Charcoal')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 5 ends -->
+
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-5_4-dusk-front_back-int.png" width="175px"
+                                    alt="" class="rounded">
+                                <h3 class="mt-3">Nokia 5.4</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Experience creative control</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 31,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-5.4 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-5_4-dusk-front_back-int.png', 'Nokia 5.4', 'Experience creative control', 'Price: 31,999 Rs', 'Battery: &nbsp;&nbsp;4000 mAh', 'Display: &nbsp;6.39&Prime;', 'Colors: &nbsp;&nbsp;Purple, Blue')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 6 ends -->
+
+                <!-- Card 7 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-G10-night-front_back-int.png" width="175px"
+                                    alt="" class="rounded">
+                                <h3 class="mt-3">Nokia G10</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Family fun for up to 3 days straight</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 20,900.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-G10 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-G10-night-front_back-int.png', 'Nokia G10', 'Family fun for up to 3 days straight', 'Price: 20,900 Rs', 'Battery: &nbsp;&nbsp;5050 mAh', 'Display: &nbsp;6.5&Prime;', 'Colors: &nbsp;&nbsp;Dusk, Blue')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 7 ends -->
+
+                <!-- Card 8 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Nokia/Smartphones/nokia-G20.png" width="163px" alt=""
+                                    class="rounded">
+                                <h3 class="mt-3">Nokia G20</h3>
+
+                                <!-- Card info -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block">Keep the camera rolling with a 3-day battery</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 23,500.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 Nokia-G20 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openNokiaModal('../images/Nokia/Smartphones/nokia-G20.png', 'Nokia G20', 'Keep the camera rolling with a 3-day battery', 'Price:', '64 GB: &nbsp;&nbsp;Rs.23,500', '128 GB: &nbsp;&nbsp;&nbsp;Rs.28, 500', null)"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 8 ends -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog myModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div> -->
-        <!-- Card 1 ends -->
-
-        <!-- Card 2 -->
-        <!-- <div class="col-md-4">
-                    <div class="card mt-3 py-3">
-                        <div class="product1 align-items-center p-2 text-center">
-                            <img src="../images/Nokia/110.png" width="160px" alt="" class="rounded">
-                            <h3 class="mt-3">Nokia 110</h3> -->
-
-        <!-- Card info -->
-        <!-- <div class="mt-3 info">
-            <span class="text1 d-block">Enjoy the moment with music and games, or capture it with
-                the rear camera.</span>
+                    <div class="modal-body">
+                        <section class="row m-0">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <img id="modalImg" src="../images/Nokia/Feature Phones/nokia-106.png" width="100%"
+                                    height="auto" alt="">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <h1 id="modalProductName">Product Name</h1>
+                                <p id="modalProductDetails">Lorem, ipsum dolor sit amet consectetur.</p>
+                                <h5 id="modalProductPrice">Price:</h5>
+                                <ul class="p-0">
+                                    <div class="d-flex">
+                                        <li id="modalProductBand">
+                                            4G
+                                        </li>
+                                    </div>
+                                    <div class="d-flex">
+                                        <li id="modalProductDisplay">
+                                            1.8&Prime;
+                                        </li>
+                                    </div>
+                                    <div class="d-flex">
+                                        <li id="modalProductColor">
+                                            Black
+                                        </li>
+                                    </div>
+                                </ul>
+                                <p class="pta">PTA and Non-PTA approved range available.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="cost mt-3 text-dark">
-            <span>From Rs. 283,300</span>
-        </div>
-        </div> -->
-        <!-- Card info ends -->
-
-        <!-- <div class="p-3 Nokia 110 text-center text-white mt-1 cursor">
-            <div class="btn btn-outline-dark px-5 border-2">Learn more</div>
-        </div>
-        </div>
-        </div> -->
-        <!-- Card 2 ends -->
-        <!-- </div>
-        </div> -->
-
     </section>
 
 
     <!-- Disclaimer -->
-    <div class="disclaimer p-3">
+    <div class="disclaimer">
         <h5>Disclaimer:</h5>
         <p>All prices are subject to change without prior notice due to dollar
             fluctuation. Please confirm price before placing an order to avoid
@@ -331,6 +734,7 @@
                     </ul>
                     <ul>
                         <h5 class="mt-4">Support</h5>
+                        <li><a href="./contact.html#find-us">Map</a></li>
                         <li><a href="../about.html">About Us</a></li>
                         <li><a href="../services.html">Our Services</a></li>
                         <li><a href="javascript:void(0)">Privacy Policy</a></li>
@@ -391,6 +795,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+
+<!-- AOS Animation JS cdn and initialization -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <!-- External JS -->
 <script src="../js/app.js"></script>

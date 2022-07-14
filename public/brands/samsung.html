@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation CSS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -42,8 +44,8 @@
                             <a class="nav-link" href="../about.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="brands-list nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="brands-list nav-link dropdown-toggle" href="javascript:void(0)"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Brands
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -69,27 +71,622 @@
     <!-- Go to top -->
     <a href="#top"><i class="fas fa-chevron-circle-up" id="scrollTop"></i></a>
 
-<!-- Banner -->
-<section class="container2">
-    <div class="row m-0 samsung-banner">
-        <div class="col-2 samsung-banner-content">
-            <a href="#all-products" class="banner-btn btn btn-dark">Explore Now</a>
+    <!-- Banner -->
+    <section class="container2">
+        <div class="row m-0 samsung-banner">
+            <div class="col-2 samsung-banner-content">
+                <a href="#all-products" class="banner-btn btn btn-dark">Explore Now</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- All Products -->
-<section id="all-products">
+    <!-- Container for all products -->
+    <section id="all-products">
 
-</section>
+        <!-- Smartphones -->
+        <div class="container my-5 py-4 smartphones">
+            <section>
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h1>Samsung Smartphones</h1>
+                </div>
+            </section>
 
+            <div class="row m-0">
+
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A03.jpg" width="170px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A03</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 21,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A03.jpg', 'Galaxy A03', 'Price: ', '32 GB&nbsp;&nbsp; Rs.21,999', '64 GB&nbsp;&nbsp; Rs.23,999', 'Display&nbsp;&nbsp; 6.5&Prime;', 'Battery&nbsp;&nbsp; 5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 1 ends -->
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy_A13.png" width="170px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A13</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 35,500.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy_A13.png', 'Galaxy A13', 'Price: ', '64 GB&nbsp;&nbsp; Rs.35,500', '128 GB&nbsp;&nbsp; Rs.38,500', 'Display&nbsp;&nbsp; 6.6&Prime;', 'Battery&nbsp;&nbsp; 5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 2 ends -->
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A12.jpg" width="170px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A12</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs. 24,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A12.jpg', 'Galaxy A12', 'Price: ', '64 GB&nbsp;&nbsp; Rs.24,999', '128 GB&nbsp;&nbsp; Rs.27,500', 'Display&nbsp;&nbsp; 6.5&Prime;', 'Battery&nbsp;&nbsp; 5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 3 ends -->
+
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A22.jpg" width="170px" alt="" class="rounded my-2">
+                                <h3 class="mt-3">Galaxy A22</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 37,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A22.jpg', 'Galaxy A22', 'Price: ', '4GB - 128 GB&nbsp;&nbsp; Rs.37,999', '6 GB-128 GB&nbsp;&nbsp; Rs.40,999', 'Display&nbsp;&nbsp; 6.4&Prime;', 'Battery&nbsp;&nbsp; 5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 4 ends -->
+
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A32.png" width="170px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A32</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 47,500.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A32.png', 'Galaxy A32', 'Price: &nbsp;47,500 Rs', 'RAM &nbsp;&nbsp;6 GB', 'ROM &nbsp;&nbsp;128 GB', 'Display &nbsp;&nbsp;6.4&Prime;', 'Battery &nbsp;&nbsp;5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 5 ends -->
+
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A52.png" width="170px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A52</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 65,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A52.png', 'Galaxy A52', 'Price: &nbsp;65,999 Rs', 'RAM &nbsp;&nbsp;8 GB', 'ROM &nbsp;&nbsp;128 GB', 'Display &nbsp;&nbsp;6.5&Prime;', 'Battery &nbsp;&nbsp;4500 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 6 ends -->
+
+                <!-- Card 7 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A52s.png" width="170px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A52s</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 71,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A52s.png', 'Galaxy A52s', 'Price: ', '128 GB&nbsp;&nbsp; Rs.71,999', '256 GB&nbsp;&nbsp; Rs.88,999', 'Display &nbsp;&nbsp;6.5&Prime;', 'Battery &nbsp;&nbsp;4500 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 7 ends -->
+
+                <!-- Card 8 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-M52.jpg" width="169px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy M52</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 82,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 galaxy-m52 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-M52.jpg', 'Galaxy M52', 'Price: &nbsp;82,999 Rs', 'RAM &nbsp;&nbsp;8 GB', 'ROM &nbsp;&nbsp;128 GB', 'Display &nbsp;&nbsp;6.7&Prime;', 'Battery &nbsp;&nbsp;5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 8 ends -->
+
+                <!-- Card 9 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-A72.jpg" width="172px" alt="" class="rounded my-3">
+                                <h3 class="mt-3">Galaxy A72</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 82,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-A72.jpg', 'Galaxy A72', 'Price: ', '128 GB&nbsp;&nbsp; Rs.82,999', '256 GB&nbsp;&nbsp; Rs.84,999', 'Display &nbsp;&nbsp;6.7&Prime;', 'Battery &nbsp;&nbsp;5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 9 ends -->
+
+                <!-- Card 10 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S20 FE.jpg" width="170px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy S20 FE</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 102,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S20 FE.jpg', 'Galaxy S20 FE', 'Price: &nbsp;102,999 Rs', 'RAM &nbsp;&nbsp;8 GB', 'ROM &nbsp;&nbsp;128 GB', 'Display &nbsp;&nbsp;6.5&Prime;', 'Battery &nbsp;&nbsp;4500 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 10 ends -->
+
+                <!-- Card 11 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S20 FE 5G.jpg" width="170px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy S20 FE 5G</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 122,500.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S20 FE 5G.jpg', 'Galaxy S20 FE 5G', 'Price: &nbsp;122,500 Rs', 'RAM &nbsp;&nbsp;8 GB', 'ROM &nbsp;&nbsp;128 GB', 'Display &nbsp;&nbsp;6.5&Prime;', 'Battery &nbsp;&nbsp;4500 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 11 ends -->
+
+                <!-- Card 12 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S21 5G.jpg" width="170px" alt=""
+                                    class="rounded my-4">
+                                <h3 class="mt-3">Galaxy S21 5G</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 176,500.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S21 5G.jpg', 'Galaxy S21 5G', 'Price: &nbsp;176,500 Rs', 'RAM &nbsp;&nbsp;8 GB', 'ROM &nbsp;&nbsp;256 GB', 'Display &nbsp;&nbsp;6.2&Prime;', 'Battery &nbsp;&nbsp;4000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 12 ends -->
+
+                <!-- Card 13 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S21 FE 5G.jpg" width="170px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy S21 FE</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 162,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S21 FE 5G.jpg', 'Galaxy S21 FE', 'Price: ', '128 GB&nbsp;&nbsp; Rs.162,999', '256 GB&nbsp;&nbsp; Rs.172,999', 'Display &nbsp;&nbsp;6.4&Prime;', 'Battery &nbsp;&nbsp;4500 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 13 ends -->
+
+                <!-- Card 14 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S21+ Plus 5G.jpg" width="170px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy S21+ Plus 5G</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 184,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S21+ Plus 5G.jpg', 'Galaxy S21+ Plus 5G', 'Price: &nbsp;184,999 Rs', 'RAM &nbsp;&nbsp;8 GB', 'ROM &nbsp;&nbsp;256 GB', 'Display &nbsp;&nbsp;6.7&Prime;', 'Battery &nbsp;&nbsp;4800 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 14 ends -->
+
+                <!-- Card 15 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S21 Ultra 5G.jpg" width="170px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy S21 Ultra 5G</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 242,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S21 Ultra 5G.jpg', 'Galaxy S21 Ultra 5G', 'Price: &nbsp;242,999 Rs', 'RAM &nbsp;&nbsp;12 GB', 'ROM &nbsp;&nbsp;256 GB', 'Display &nbsp;&nbsp;6.8&Prime;', 'Battery &nbsp;&nbsp;5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 15 ends -->
+
+                <!-- Card 16 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-S22 Ultra.jpg" width="215px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy S22 Ultra</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 285,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-S22 Ultra.jpg', 'Galaxy S22 Ultra', 'Price: &nbsp;285,999 Rs', 'RAM &nbsp;&nbsp;12 GB', 'ROM &nbsp;&nbsp;256 GB', 'Display &nbsp;&nbsp;6.8&Prime;', 'Battery &nbsp;&nbsp;5000 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 16 ends -->
+
+                <!-- Card 17 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-Z Flip 3.jpg" width="193px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy Z Flip 3</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 199,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-Z Flip 3.jpg', 'Galaxy Z Flip 3', 'Price: &nbsp;199,999 Rs', 'RAM &nbsp;&nbsp;12 GB', 'ROM &nbsp;&nbsp;256 GB', 'Display &nbsp;&nbsp;6.7&Prime;', 'Battery &nbsp;&nbsp;3300 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 17 ends -->
+
+                <!-- Card 18 -->
+                <div class="col-md-4">
+                    <section data-aos="fade-up">
+                        <div class="card mt-3 py-3">
+                            <div class="product1 align-items-center p-2 text-center">
+                                <img src="../images/Samsung/Galaxy-Z Fold 3 5G.jpg" width="217px" alt=""
+                                    class="rounded my-3">
+                                <h3 class="mt-3">Galaxy Z Fold 3 5G</h3>
+
+                                <!-- Card info -->
+                                <!-- <div class="mt-3 info">
+                                <span class="text1 d-block">Nothing</span>
+                            </div> -->
+                                <div class="cost mt-3 text-dark">
+                                    <span>From Rs 314,999.00</span>
+                                </div>
+                            </div>
+                            <!-- Card info ends -->
+
+                            <div class="p-3 text-center text-white mt-1 cursor">
+                                <button class="btn btn-outline-dark px-5 border-2" data-bs-toggle="modal"
+                                    onclick="openSamsungModal('../images/Samsung/Galaxy-Z Fold 3 5G.jpg', 'Galaxy Z Fold 3 5G', 'Price: &nbsp;314,999 Rs', 'RAM &nbsp;&nbsp;12 GB', 'ROM &nbsp;&nbsp;256 GB', 'Display &nbsp;&nbsp;7.6&Prime;', 'Battery &nbsp;&nbsp;4400 mAh')"
+                                    data-bs-target="#productModal">Learn more
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Card 18 ends -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog myModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="row m-0">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <img id="modalImg" src="../images/Samsung/Galaxy-A03.jpg" width="100%" height="auto"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <h1 id="modalProductName">Product Name</h1>
+                                <!-- <p >Lorem, ipsum dolor sit amet consectetur.</p> -->
+                                <h5 id="modalProductPrice">Price:</h5>
+                                <ul class="p-0">
+                                    <div class="d-flex">
+                                        <li id="modalProductPrice1">
+                                            128 GB &nbsp;&nbsp;&nbsp;Rs.198,300
+                                        </li>
+                                    </div>
+                                    <div class="d-flex">
+                                        <li id="modalProductPrice2">
+                                            256 GB &nbsp;&nbsp;&nbsp;Rs.225,700
+                                        </li>
+                                    </div>
+                                    <div class="d-flex">
+                                        <li id="modalProductDisplay">
+                                            Display: 6.5&Prime;
+                                        </li>
+                                    </div>
+                                    <div class="d-flex">
+                                        <li id="modalProductBattery">
+                                            4000 mAh
+                                        </li>
+                                    </div>
+                                </ul>
+                                <p class="pta">PTA and Non-PTA approved range available.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Disclaimer -->
-    <div class="disclaimer p-3">
+    <div class="disclaimer">
         <h5>Disclaimer:</h5>
         <p>All prices are subject to change without prior notice due to dollar
-                fluctuation. Please confirm price before placing an order to avoid
-                inconvenience. Thank you.</p>
+            fluctuation. Please confirm price before placing an order to avoid
+            inconvenience. Thank you.</p>
     </div>
 
     <!-- Footer -->
@@ -121,6 +718,7 @@
                     </ul>
                     <ul>
                         <h5 class="mt-4">Support</h5>
+                        <li><a href="./contact.html#find-us">Map</a></li>
                         <li><a href="../about.html">About Us</a></li>
                         <li><a href="../services.html">Our Services</a></li>
                         <li><a href="javascript:void(0)">Privacy Policy</a></li>
@@ -181,6 +779,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+
+<!-- AOS Animation JS cdn and initialization -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <!-- External JS -->
 <script src="../js/app.js"></script>
